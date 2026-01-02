@@ -2,7 +2,7 @@ import FreeCAD as App
 import Part
 import math
 
-// https://www.aitendo.com/product/16785
+# https://www.aitendo.com/product/16785
 
 name = "aitendo_AV2-8.4-10GA"
 doc = App.newDocument(name)
