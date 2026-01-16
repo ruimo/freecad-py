@@ -52,8 +52,8 @@ for side in [-1, 1]:
 # (C) サイドのスナップイン脚 (外側 25.5, 内側 22.8)
 # 幅方向 1.7mm(1.35mm+余裕), 厚み 3.2mm(3mm+余裕)
 for side in [-1, 1]:
-    p1 = Part.makeBox(1.7, 3.2, PIN_L)
-    p1.translate(App.Vector(side*(21+1.7)/2 - 1.7/2, 6.0 - 3.2/2, -PIN_L))
+    p1 = Part.makeBox(1.6, 2.6, PIN_L)
+    p1.translate(App.Vector(-1.6/2 + side*(1.6/2 + 23/2), 10.3-2.7-2.6, -PIN_L))
     body = body.fuse(p1)
 
 # 表示
